@@ -38,13 +38,14 @@ function logInForm(event) {
     successfulLogIn.textContent = "Du har suksessfult logget inn på " + inputEmail;
     failedLogIn.textContent = "Epost eller passord er feil."
 
-    // S
+    // M & S
     if (inputEmail !== "" && inputPassword !== " ") {
         displayResult.appendChild(successfulLogIn);
     } else {
         displayResult.appendChild(failedLogIn);
     }
 
+    // S
     displayResult.appendChild(displayInputEmail);
     displayResult.appendChild(displayInputPassword);
 }
