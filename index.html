@@ -37,6 +37,46 @@
     <main class="main">
       <!-- Hero / Home -->
       <section id="home" class="hero">
+        <form>
+          <!--
+            Innlogginsskjema:
+            1. Lag til HTML
+              - Label og input for epost
+              - Label og input for passord
+              - Sjekkboks for vis passord
+              - Sjekkboks for husk meg
+              - Logg inn/Send knapp
+              - Div element som bekrefter innloggingen / gir feilmelding
+            2. Hente knappen til JavaScript
+            3. Sette opp en hendelse lytter til knappen
+            4. Hente alle element og verdier til JavaScript
+              - Lage variabel som henter input epost
+              - Lage variabel som henter input passord
+              - Lage variabel som henter sjekkbokser
+            5. Lager element i JS som bekrefter/avviser innlogging
+              - Lage p-element som viser rett tekst for bekreftelse eller innlogging
+            6. Prossesere variablene vi lagret
+              - Hente verdiene til input og sjekkboks elementene
+              - Ta i bruk metoden textContent for å sende verdi til siden
+           -->
+
+          <label for="inputEmail">
+            Epost
+            <input type="email" name="inputEmail" id="inputEmail">
+          </label>
+          <label for="inputPassword">
+            Passord
+            <input type="password" name="inputPassword" id="inputPassword">
+          </label>
+          <label for="inputShowPassword inputRememberUser">
+            <input type="checkbox" name="inputShowPassword" id="inputShowPassword">
+            <input type="checkbox" name="inputRememberUser" id="inputRememberUser">
+          </label>
+          <button id="logInButton">Logg inn</button>
+          <div id="displayResult">
+            <!-- Får innhold fra JS -->
+          </div>
+        </form>
       </section>
 
       <!-- Tilegg seksjon-->
