@@ -39,7 +39,7 @@ function logInForm(event) {
     failedLogIn.textContent = "Epost eller passord er feil."
 
     // M & S
-    if (inputEmail !== "" && inputPassword !== " ") {
+    if (inputEmail !== "" && inputPassword !== "") {
         displayResult.appendChild(successfulLogIn);
     } else {
         displayResult.appendChild(failedLogIn);
